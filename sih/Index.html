@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Raptor PG/Hostel Booking</title>
+    <link rel="stylesheet" href="aa.css">
+</head>
+
+<body>  
+    <header>
+        <div class="container">
+            <h1>RAPTOR</h1>
+           
+        </div>
+    </header>
+
+    <div class="login-container">
+        <div class="form-box">
+            <h2>Login to your account</h2>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">Username or Email</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your email or username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="login-btn">Login</button>
+                <p class="signup-link">Don't have an account? <a href="signup.html" target="_self">Sign up</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript for redirect -->
+    <script>
+        // Add event listener to the form to prevent default form submission
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting to a server
+
+            // Redirect to the index.html page
+            window.location.href = "Home.html";
+        });
+    </script>
+</body>
+</html>
