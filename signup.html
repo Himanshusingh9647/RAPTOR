@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - PG/Hostel Booking</title>
+    <link rel="stylesheet" href="aa.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>RAPTOR</h1>
+           
+        </div>
+    </header>
+    <div class="signup-container">
+        <div class="form-box">
+            <h2>Create your account</h2>
+            <form action="/signup" method="POST">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter a username" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Create a password" required>
+                </div>
+                <div class="input-group">
+                    <label for="confirm_password">Confirm Password</label>
+                    <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm your password" required>
+                </div>
+                <button type="submit" class="signup-btn">Sign Up</button>
+                <p class="login-link">Already have an account? <a href="/login">Login here</a></p>
+            </form>
+        </div>
+    </div>
+    <script>
+        // Add event listener to the form to prevent default form submission
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting to a server
+
+            // Redirect to the index.html page
+            window.location.href = "index.html";
+        });
+    </script>
+</body>
+</html>
