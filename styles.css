@@ -81,6 +81,35 @@ main {
   justify-content: center;
 }
 
+.view{
+    background-color: black;
+    color: white;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-style: solid;
+    padding-top: 8px;
+      padding-bottom: 8px;
+      cursor: pointer;
+
+      padding-left: 25px;
+      padding-right: 25px;
+    transition: padding 0.15s, margin 0.15s, background-color 0.15s, color 0.15s;
+    border-radius: 8px;
+}
+
+
+.view:hover {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: white;
+    color: black;
+}
+
 .pg-item {
   border: 1px solid #ddd;
   border-radius: 8px;
