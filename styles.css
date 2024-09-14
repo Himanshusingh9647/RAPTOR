@@ -97,7 +97,7 @@ main {
       padding-left: 25px;
       padding-right: 25px;
     transition: padding 0.15s, margin 0.15s, background-color 0.15s, color 0.15s;
-    border-radius: 16px;
+    border-radius: 28px;
 }
 
 
@@ -119,7 +119,7 @@ main {
   transition: transform 0.3s, box-shadow 0.3s;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
- padding-bottom: 1rem;
+ height: 450px;
 
 }
 
